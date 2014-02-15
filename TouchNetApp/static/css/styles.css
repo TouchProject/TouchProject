@@ -1,12 +1,7 @@
 body{
 	font-family:Arial;
 	background-image:linear-gradient(90deg, white, gray);
-}
-
-header{
-	position: fixed;
-	width: 100%;
-	background-color:white;
+	padding-top:80px;
 }
 
 a{
