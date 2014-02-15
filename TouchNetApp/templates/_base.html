@@ -4,7 +4,19 @@
 	<head>
 		<title>{% block titre %}{% endblock %}</title>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-			</head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}">
+	</head>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	
+	<header>
+		test header
+	</header>
+	
 	<body>
 		{% block contenu %}{% endblock %}
 	</body>
