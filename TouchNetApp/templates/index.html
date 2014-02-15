@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+
+{% block titre %}TouchNet{% endblock %}
+
+{% block contenu %}
+	<div class="left">
+		<h2 id="top">{{ utilisateur.pseudo }}</h2>
+	</div>
+	<div class="right">
+		<p class="touch">Touchs</p>
+		{% for touch in touchs %}
+			<p class="touch">
+				<span class="utilisateur"><a href="{% url 'TouchNetApp:profile' utilisateur.pk %}">{{ touch.utilisateur }}<a/></span>
+				<span class="date">{{ touch.date_touch | date:'d M Y H:i' }}</span><br/>
+				<span class="texte">{{ touch.texte }}</span>
+			<p/>
+			{% empty %}
+			<p class="touch">*** Aucun Touch ***</p>
+		{% endfor %}
+		<p class="touch"><a href="#top">Retour en haut</a></p>
+	</div>
+{% endblock %}

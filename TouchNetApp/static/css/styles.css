@@ -1,0 +1,58 @@
+body{
+	font-family:Arial;
+	background-image:linear-gradient(90deg, white, gray);
+}
+
+a{
+	text-decoration:none;
+	color:#444444;
+}
+a:hover{
+	text-decoration:underline;
+	color:#F15015;
+}
+
+.left{
+	float:left;
+	margin: 0 0 0 7%;
+}
+
+.right{
+	width:50%;
+	float:right;
+	margin: 0 7% 0 0;
+}
+
+.left H2{
+	color:#444444;
+	text-shadow: 1px 1px 12px #555;
+}
+
+/* Style affiche des Touchs */
+.touch{
+	color:#444444;
+	padding: 15px;
+	background-color:white;
+	margin: 0 0 -15px 0;
+}
+
+.touch:first-child{
+	border-radius:10px 10px 0 0;
+	margin: 0 0 1px 0;
+}
+
+.touch:last-child{
+	border-radius: 0 0 10px 10px;
+}
+
+.touch .utilisateur{ 
+	font-weight:bold; 
+}
+
+.touch .date{ 
+	font-size:10px; 
+}
+
+.touch .texte{
+	color:black;
+}
